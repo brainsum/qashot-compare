@@ -14,7 +14,7 @@ const SuiteNameTitle = styled.h1`
 
 class SuiteName extends React.Component {
   render () {
-    return <SuiteNameTitle>{this.props.suiteName} Report</SuiteNameTitle>;
+    return <SuiteNameTitle>{this.props.suiteName} report page</SuiteNameTitle>;
   }
 }
 

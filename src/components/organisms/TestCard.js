@@ -6,7 +6,6 @@ import { colors, shadows } from '../../styles';
 // atoms
 import ErrorMessages from '../atoms/ErrorMessages';
 import TextDetails from '../atoms/TextDetails';
-import NavButtons from '../atoms/NavButtons';
 
 // molecules
 import TestImages from '../molecules/TestImages';
@@ -38,13 +37,9 @@ const CardWrapper = styled.div`
 export default class TestCard extends React.Component {
   render () {
     let { pair: info, status } = this.props.test;
-    let onlyText = this.props.onlyText;
 
     return (
       <CardWrapper id={this.props.id} status={status}>
-        {!onlyText && (
-          <NavButtons currentId={this.props.numId} lastId={this.props.lastId} />
-        )}
         <TextDetails info={info} />
         <TestImages info={info} status={status} />
         <ErrorMessages info={info} status={status} />

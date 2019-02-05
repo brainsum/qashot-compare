@@ -1,19 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import LogoImg from '../../assets/images/logo.png';
+import { colors, fonts } from '../../styles';
 
-const LogoImage = styled.img`
-  display: block;
-  height: 35px;
+const LogoType = styled.a`
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: ${fonts.latoRegular};
+  color: ${colors.primaryText};
 `;
 
 export default class Logo extends React.Component {
   render () {
     return (
-      <a href="https://garris.github.io/BackstopJS/" target="_blank">
-        <LogoImage src={LogoImg} />
-      </a>
+      <LogoType href="www.qashot.com" target="_blank" rel="noreferrer noopener">www.qashot.com</LogoType>
     );
   }
 }

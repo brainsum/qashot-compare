@@ -66,10 +66,8 @@ class TextDetails extends React.Component {
   }
 
   render () {
+    console.log(this.props.info);
     const {
-      label,
-      fileName,
-      selector,
       diff,
       url,
       referenceUrl
@@ -79,28 +77,16 @@ class TextDetails extends React.Component {
 
     return (
       <WrapperDetails>
-        <Row hidden={!settings.textInfo}>
-          <Label>label: </Label>
-          <Value>{label}</Value>
-          <Label>selector: </Label>
-          <Value>{selector}</Value>
-        </Row>
         <Row>
-          <Label>filename: </Label>
-          <Value onMouseOver={this.showPanel}>{fileName}</Value>
+          <Label>Screen Resolution: </Label>
+          <Value onMouseOver={this.showPanel}>1920 * auto height</Value>
         </Row>
         <DiffDetails suppress={!settings.textInfo} diff={diff} />
 
         <DetailsPanel {...{ showPanel }} onMouseLeave={this.hidePanel}>
           <Row>
-            <Label>label: </Label>
-            <Value>{label} </Value>
-            <Label>selector: </Label>
-            <Value>{selector} </Value>
-          </Row>
-          <Row>
-            <Label>filename: </Label>
-            <Value>{fileName} </Value>
+            <Label>Screen Resolution: </Label>
+            <Value>1920 * auto height </Value>
           </Row>
           <Row>
             <UrlDetails url={url} referenceUrl={referenceUrl} />

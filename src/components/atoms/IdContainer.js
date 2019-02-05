@@ -31,7 +31,7 @@ const IdTitle = styled.h3`
 
 class IdConfig extends React.Component {
   render () {
-    return <IdTitle>{this.props.idConfig}</IdTitle>;
+    return <IdTitle>test id: {this.props.idConfig}</IdTitle>;
   }
 }
 

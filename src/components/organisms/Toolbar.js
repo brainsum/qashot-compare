@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import FiltersSwitchContainer from '../molecules/FiltersSwitch';
-import TextSearchContainer from '../molecules/TextSearch';
-import SettingsContainer from '../molecules/SettingsContainer';
 
 import { colors } from '../../styles';
 
@@ -25,8 +23,6 @@ export default class Toolbar extends React.Component {
     return (
       <ToolbarWrapper style={this.props.style}>
         <FiltersSwitchContainer />
-        <TextSearchContainer />
-        <SettingsContainer />
       </ToolbarWrapper>
     );
   }
