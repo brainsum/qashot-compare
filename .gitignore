@@ -1,0 +1,36 @@
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.cache
+
+# Dependency directory
+# Commenting this out is preferred by some people, see
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
+node_modules
+yarn.lock
+
+# Users Environment Variables
+.lock-wscript
+
+*.sublime*
+.idea
+
+bower_components/**/.*
+
+config.js
+capture/config.json
+
+output/bitmaps_reference/
+
+output/bitmaps_test/
+
+output/config\.js
+
+\.vscode/
