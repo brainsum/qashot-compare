@@ -3,6 +3,10 @@ HTML report resource bundle
 
 Modified version of BackstopJS Compare React app.
 
+## Development
+
+Rename config.js.example to config.js in "output" folder.
+
 To develop the React project run...
 
 ```
