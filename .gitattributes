@@ -1,0 +1,11 @@
+export-ignore src
+
+export-ignore .babelrc
+export-ignore .editorconfig
+export-ignore .eslintignore
+export-ignore .eslintrc
+export-ignore .gitattributes
+export-ignore .gitignore
+export-ignore backstop.json
+export-ignore index.html
+export-ignore webpack.config.js
