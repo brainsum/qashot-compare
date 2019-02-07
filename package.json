@@ -1,6 +1,6 @@
 {
   "name": "qashot-compare",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Modified version of BackstopJS (3.9.2) Compare React app",
   "scripts": {
     "lint": "eslint '*.js' 'src/**/*.js' 'core/**/*.js' 'cli/**/*.js' 'capture/**/*.js' 'test/**/*.js'",
