@@ -1,5 +1,5 @@
 {
-  "name": "quashot-compare",
+  "name": "qashot-compare",
   "version": "1.0.0",
   "description": "Modified version of BackstopJS (3.9.2) Compare React app",
   "scripts": {
