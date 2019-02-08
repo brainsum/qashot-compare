@@ -66,11 +66,12 @@ class TextDetails extends React.Component {
   }
 
   render () {
-    console.log(this.props.info);
+    console.log(this.props);
     const {
       diff,
       url,
-      referenceUrl
+      referenceUrl,
+      resolution
     } = this.props.info;
     const { settings } = this.props;
     const { showPanel } = this.state;
@@ -79,14 +80,14 @@ class TextDetails extends React.Component {
       <WrapperDetails>
         <Row>
           <Label>Screen Resolution: </Label>
-          <Value onMouseOver={this.showPanel}>1920 * auto height</Value>
+          <Value onMouseOver={this.showPanel}>{resolution}</Value>
         </Row>
         <DiffDetails suppress={!settings.textInfo} diff={diff} />
 
         <DetailsPanel {...{ showPanel }} onMouseLeave={this.hidePanel}>
           <Row>
             <Label>Screen Resolution: </Label>
-            <Value>1920 * auto height </Value>
+            <Value>{resolution} </Value>
           </Row>
           <Row>
             <UrlDetails url={url} referenceUrl={referenceUrl} />
