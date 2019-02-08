@@ -17,8 +17,11 @@ class List extends React.Component {
     let { tests, settings } = this.props;
     let onlyText =
       !settings.refImage && !settings.testImage && !settings.diffImage;
-    tests[0].pair.resolution = '1366 * auto height';
-    tests[1].pair.resolution = '640 * auto height';
+
+    if (tests.length >= 2) {
+      tests[0].pair.resolution = '1366 * auto height';
+      tests[1].pair.resolution = '640 * auto height';
+    }
 
     return (
       <ListWrapper>
