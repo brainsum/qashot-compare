@@ -28,14 +28,14 @@ export default class DiffDetails extends React.Component {
     const { url, referenceUrl } = this.props;
     return (
       <span>
-        <Label>url: </Label>
+        <Label>Compared URLs: </Label>
         <Value>
           <Link href={url} target="_blank">
-            test
+            URL1
           </Link>
           {referenceUrl && (
             <Link withSeperator href={referenceUrl} target="_blank">
-              reference
+              URL2
             </Link>
           )}
         </Value>
