@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint '*.js' 'src/**/*.js' 'core/**/*.js' 'cli/**/*.js' 'capture/**/*.js' 'test/**/*.js'",
     "format": "prettier-eslint --write \"src/**/*.js\"",
-    "build": "cp ./node_modules/diverged/src/diverged.js ./output/ && cp ./node_modules/diff/dist/diff.js ./output/ && webpack --config ./webpack.config.js",
+    "build": "cp ./node_modules/diverged/src/diverged.js ./output/ && cp ./node_modules/diff/dist/diff.js ./output/ && webpack  --mode production --config ./webpack.config.js",
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --mode development --content-base ./output --config ./webpack.config.js",
     "copy-report-bundle": "mkdir -p test/configs/backstop_data/html_report && cp output/index_bundle.js test/configs/backstop_data/html_report/",
     "build-and-copy-report-bundle": "npm run build-compare && npm run copy-report-bundle"
