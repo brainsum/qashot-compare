@@ -14,7 +14,7 @@ const LogoType = styled.a`
 export default class Logo extends React.Component {
   render () {
     return (
-      <LogoType href="http://www.qashot.com" target="_blank" rel="noreferrer noopener">www.qashot.com</LogoType>
+      <LogoType href="https://www.qashot.com" target="_blank" rel="noreferrer noopener">www.qashot.com</LogoType>
     );
   }
 }
