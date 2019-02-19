@@ -19,7 +19,7 @@ class List extends React.Component {
       !settings.refImage && !settings.testImage && !settings.diffImage;
 
     if (tests.length >= 2) {
-      tests[0].pair.resolution = '1366 * auto height';
+      tests[0].pair.resolution = '1920 * auto height';
       tests[1].pair.resolution = '640 * auto height';
     }
 
