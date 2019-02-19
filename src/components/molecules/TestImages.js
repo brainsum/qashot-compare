@@ -35,12 +35,14 @@ class TestImages extends React.Component {
         id: 'refImage',
         label: 'Reference',
         src: reference,
+        url: this.props.info.referenceUrl,
         visible: settings.refImage
       },
       {
         id: 'testImage',
         label: 'Test',
         src: test,
+        url: this.props.info.url,
         visible: settings.testImage
       }
     ];
@@ -49,6 +51,7 @@ class TestImages extends React.Component {
       this.state.images.push({
         id: 'diffImage',
         label: 'Diff',
+        url: 'Difference',
         src: this.props.info.diffImage,
         visible: settings.diffImage
       });
@@ -64,6 +67,7 @@ class TestImages extends React.Component {
             onClick={this.onImageClick.bind(this, img)}
             key={i}
             hidden={!img.visible}
+            url={img.url}
           />
         ))}
       </ImagesWrapper>

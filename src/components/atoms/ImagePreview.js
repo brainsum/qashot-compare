@@ -51,13 +51,13 @@ class ImagePreview extends React.Component {
   }
 
   render () {
-    let { hidden, settings, label, src } = this.props;
+    let { hidden, settings, url, src } = this.props;
     if (!src || src === '../..' || this.state.imgLoadError) {
       src = BASE64_PNG_STUB;
     }
     return (
       <Wrapper hidden={hidden} withText={settings.textInfo}>
-        <Label>{label}</Label>
+        <Label>{url}</Label>
         <Image {...this.props} src={src} onError={this.onLoadError} />
       </Wrapper>
     );
