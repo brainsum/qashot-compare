@@ -29,7 +29,6 @@ const Label = styled.span`
   color: ${colors.secondaryText};
   display: block;
   margin: 0 auto;
-  text-transform: uppercase;
   padding: 5px 0;
   padding-bottom: 15px;
   font-size: 12px;
