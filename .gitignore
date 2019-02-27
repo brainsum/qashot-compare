@@ -31,8 +31,8 @@ config.js
 capture/config.json
 
 output/bitmaps_reference/
-
 output/bitmaps_test/
+output/backstop_data/
 
 output/config\.js
 
