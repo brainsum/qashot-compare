@@ -1,0 +1,14 @@
+{
+    "name": "brainsum/qashot-compare",
+    "description": "Modified version of BackstopJS (3.9.2) Compare React app",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mhavelant",
+            "email": "mhavelant@brainsum.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
